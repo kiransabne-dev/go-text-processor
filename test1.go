@@ -6,8 +6,8 @@ import (
 	"os"
 )
 
-var writer *bufio.Writer = bufio.NewWriter(os.Stdout)
+var Writer *bufio.Writer = bufio.NewWriter(os.Stdout)
 
 func Printf(f string, a ...interface{}) {
-	fmt.Fprintf(writer, f, a...)
+	fmt.Fprintf(Writer, f, a...)
 }
